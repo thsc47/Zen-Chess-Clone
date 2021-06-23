@@ -1,5 +1,5 @@
 class Board{
-    draw(el){
+    draw(e){
         let black = "<div class='chess-cell chess-cell-black'>";
         let white = "<div class='chess-cell chess-cell-white'>";
 
@@ -8,7 +8,7 @@ class Board{
             for (let col = 0; col < 8; col++) {
                 let cellType = startWithBlack ? black : white;
                 startWithBlack = !startWithBlack;
-                el.innerHTML += cellType;
+                e.innerHTML += cellType;
             }
         }
     }

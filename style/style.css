@@ -1,3 +1,31 @@
+body {
+    background-color: #fafafa;
+}
+
+#game {
+    display: flex;
+    padding: 100px;
+}
+
+#instruction {
+    flex-direction: column;
+    width: 150px;
+    background-image: url('../images/Placeholder.svg');
+}
+
+#board {
+    flex-direction: column;
+    padding: 100px;
+    
+}
+
+#rules {
+    background-image: url('../images/Placeholder.svg');
+    padding: 150px;
+}
+
+
+
 .chess-cell {
     width: 70px;
     height: 70px;
@@ -16,4 +44,12 @@
 
 .chess-cell-white {
     background-color: #f1c0c0;
+}
+
+.chess-cell-black:active {
+    background-color: #693824;
+}
+
+.chess-cell-white:active {
+    background-color: #f5a6a6;
 }
