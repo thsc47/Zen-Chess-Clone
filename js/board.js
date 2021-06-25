@@ -1,3 +1,12 @@
+//Classe para iniciar o board(vinculada ao futuro botão)
+class StartGame{
+    constructor(){
+        let board = new Board();
+        board.draw(document.getElementById("chessboard"));
+        board.cells()
+    }
+}
+//Constroi o board e nomeia cada célula
 class Board{
     draw(e){
         let black = "<div class='chess-cell chess-cell-black'>";
@@ -19,8 +28,17 @@ class Board{
         }
     }
 }
+//Inicia o nível I
+class Level{
+    constructor(board){
+
+    }
+}
+//Inicia o Board
+const startGame = document.querySelector('#start-game');
+startGame.addEventListener('click', () => {
+    new StartGame();
+})
 
 
-let board = new Board();
-board.draw(document.getElementById("chessboard"));
-board.cells()
+
