@@ -12,7 +12,7 @@ class StartGame{
         level.blackKing('.a4');
         level.whiteKing('.a21')
         level.whiteQueen('.a40')
-        teste.currentClick()
+        teste.move()
     }
 }
 
