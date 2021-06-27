@@ -2,6 +2,15 @@ export default class ChessRules {
         bishop(currentPosition,lastPosition) {
             const inicialPosition = parseInt(currentPosition.replace(/[^0-9]/g,''));
             const finalPosition = parseInt(lastPosition.replace(/[^0-9]/g,''))
+
+            switch(true) {
+                case (finalPosition - inicialPosition) % 7 === 0:
+                    return true
+                case (finalPosition - inicialPosition) % 9 === 0:
+                    return true
+                default:
+                    return false
+            }
         }
 
         horse(currentPosition,lastPosition) {
