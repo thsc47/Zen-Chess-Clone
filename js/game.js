@@ -19,17 +19,17 @@ export default class MovePieces {
                 if(lastPosition === undefined) {lastPosition = inicialLevelPiece};
                 currentPosition = (`.a${i}`);
                 console.log(`Agora ${currentPosition} / Anterior ${lastPosition}`);
-                
-                //verifica se o movimento é válido
                 console.log(chessRules.pawn(lastPosition, currentPosition))
-
-                //remove a imagem da primeira celula
-                const queenPosition = document.querySelector(lastPosition);
-                const whiteQueenImg = document.querySelector(lastPosition).querySelector('img');
-                queenPosition.removeChild(whiteQueenImg);
-
-                //Atribui a imagem na nova célula
-                insertPieces.whiteQueen(currentPosition);
+                //verifica se o movimento é válido
+                if(chessRules.king(lastPosition, currentPosition)){
+                    //remove a imagem da primeira celula
+                    const queenPosition = document.querySelector(lastPosition);
+                    const whiteQueenImg = document.querySelector(lastPosition).querySelector('img');
+                    queenPosition.removeChild(whiteQueenImg);
+    
+                    //Atribui a imagem na nova célula
+                    insertPieces.whiteQueen(currentPosition);
+                }
             })
         }
     }

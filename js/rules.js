@@ -12,13 +12,35 @@ export default class ChessRules {
         king(currentPosition,lastPosition) {
             const inicialPosition = parseInt(currentPosition.replace(/[^0-9]/g,''));
             const finalPosition = parseInt(lastPosition.replace(/[^0-9]/g,''))
+
+            switch (true){
+                case (inicialPosition + 8) === finalPosition:
+                    return true;
+
+                case (inicialPosition - 8) === finalPosition:
+                    return true;
+                case (inicialPosition + 1) === finalPosition:
+                    return true;
+                case (inicialPosition - 1) === finalPosition:
+                    return true;
+                case (inicialPosition + 9) === finalPosition:
+                    return true;
+                case (inicialPosition - 9) === finalPosition:
+                    return true;
+                case (inicialPosition + 7) === finalPosition:
+                    return true;
+                case (inicialPosition - 7) === finalPosition:
+                    return true;
+                default:
+                    return false;   
+            }
          }
 
         pawn(currentPosition,lastPosition) {
             const inicialPosition = parseInt(currentPosition.replace(/[^0-9]/g,''));
             const finalPosition = parseInt(lastPosition.replace(/[^0-9]/g,''))
             if((inicialPosition - 8) === finalPosition){return true}
-            else{return  `${inicialPosition} + 8, ${finalPosition}, false`}
+            else{return false}
         }
         queen(currentPosition,lastPosition) {
             const inicialPosition = parseInt(currentPosition.replace(/[^0-9]/g,''));
