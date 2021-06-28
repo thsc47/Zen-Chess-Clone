@@ -19,9 +19,9 @@ export default class MovePieces {
                 if(lastPosition === undefined) {lastPosition = inicialLevelPiece};
                 currentPosition = (`.a${i}`);
                 console.log(`Agora ${currentPosition} / Anterior ${lastPosition}`);
-                console.log(chessRules.pawn(lastPosition, currentPosition))
+                console.log(chessRules.queen(lastPosition, currentPosition))
                 //verifica se o movimento é válido
-                if(chessRules.bishop(lastPosition, currentPosition)){
+                if(chessRules.queen(lastPosition, currentPosition)){
                     //remove a imagem da primeira celula
                     const queenPosition = document.querySelector(lastPosition);
                     const whiteQueenImg = document.querySelector(lastPosition).querySelector('img');
