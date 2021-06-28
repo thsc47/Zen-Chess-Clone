@@ -17,6 +17,19 @@ export default class ChessRules {
         horse(currentPosition,lastPosition) {
             const inicialPosition = parseInt(currentPosition.replace(/[^0-9]/g,''));
             const finalPosition = parseInt(lastPosition.replace(/[^0-9]/g,''))
+
+            switch(true) {
+                case Math.abs(finalPosition - inicialPosition) === 6:
+                    return true;
+                case Math.abs(finalPosition - inicialPosition) === 10:
+                    return true;
+                case Math.abs(finalPosition - inicialPosition) === 15:
+                    return true;
+                case Math.abs(finalPosition - inicialPosition) === 17:
+                    return true;
+                default:
+                    return (finalPosition - inicialPosition);
+            }
         }
 
         king(currentPosition,lastPosition) {
@@ -91,7 +104,6 @@ export default class ChessRules {
                     return true;
                 default:
                     return false;
-
             }
       }
 }
