@@ -1,22 +1,16 @@
-import Board from "./board.js";
-import InsertPieces from "./insertPieces.js";
-import MovePieces from "./game.js";
+import MovePieces from "./levelI.js";
 
-//Classe para iniciar o board(vinculada ao futuro botão)
+//Classe para iniciar o prímeiro nível
 class StartGame{
     constructor(){
-        const board = new Board();
-        const level = new InsertPieces();
-        const teste = new MovePieces()
-        board.draw(document.getElementById("chessboard"));
-        level.blackKing('.a4');
-        level.whiteKing('.a21')
-        level.whiteQueen('.a40')
-        teste.move()
+        const levelI = new MovePieces()
+        levelI.start()
+        levelI.move()
+
     }
 }
 
-//Inicia o Board
+//Inicia o primeiro level
 const startGame = document.querySelector('#start-game');
 startGame.addEventListener('click', () => {
     new StartGame();

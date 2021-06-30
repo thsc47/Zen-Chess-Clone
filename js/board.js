@@ -16,6 +16,12 @@ export default class Board{
             document.querySelectorAll('.chess-cell')[cells].classList.add('a'+cells)
         }
     }
+
+    clear() {
+        for(let cells = 0; cells < 64; cells += 1) {
+            document.querySelectorAll('.chess-cell')[cells].innerHTML = '';
+        }
+    }
 }
 
 

@@ -30,6 +30,22 @@ export default class InsertPieces {
         blackQueenImg.src = '../images/Black_queen.png'
         blackQueenCell.appendChild(blackQueenImg);
     }
+
+    //Bispo Negro
+    blackBishop(position){
+        const blackBishopCell = document.querySelector(position);
+        const blackBishopImg = new Image();
+        blackQueenImg.src = '../images/Black_bishop.png'
+        blackBishopCell.appendChild(blackQueenImg);
+    }
+
+    //Bispo Branco
+    whiteBishop(position){
+        const whiteBishopCell = document.querySelector(position);
+        const whiteBishopImg = new Image();
+        whiteBishopImg.src = '../images/White_bishop.png'
+        whiteBishopCell.appendChild(whiteBishopImg);
+    }
 }
 
 
