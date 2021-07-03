@@ -3,9 +3,9 @@ body {
 }
 
 #game {
-    position:absolute;
-    left:43%; /*43*/
-    top:30%; /*23*/
+    position:flex;
+    left:50%; /*43*/
+    top:50%; /*23*/
 }
 
 #board {
