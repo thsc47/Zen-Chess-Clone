@@ -19,7 +19,7 @@ export default class InsertPieces {
     whiteQueen(position){
          const whiteQueenCell = document.querySelector(position);
          const whiteQueenImg = new Image();
-         whiteQueenImg.src = '../images/White_queen.png'
+         whiteQueenImg.src = './images/White_queen.png'
          whiteQueenCell.appendChild(whiteQueenImg);
      }
 
@@ -27,7 +27,7 @@ export default class InsertPieces {
     blackQueen(position){
         const blackQueenCell = document.querySelector(position);
         const blackQueenImg = new Image();
-        blackQueenImg.src = '../images/Black_queen.png'
+        blackQueenImg.src = './images/Black_queen.png'
         blackQueenCell.appendChild(blackQueenImg);
     }
 
