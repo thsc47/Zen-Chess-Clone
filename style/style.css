@@ -2,11 +2,16 @@ body {
     background-image: linear-gradient(to bottom , #ebf9fa , #c6ffec);
 }
 
+#game {
+    position:absolute;
+    left:43%; /*43*/
+    top:30%; /*23*/
+}
 
 #board {
     flex-direction: column;
     padding-top: 100px;
-    padding-left: 540px;
+    padding-left: 650px;
     
 }
 
