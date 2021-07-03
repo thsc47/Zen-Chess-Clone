@@ -4,14 +4,14 @@ export default class InsertPieces {
     blackKing(position) {
         const blackKingCell = document.querySelector(position);
         const blackKingImg = new Image();
-        blackKingImg.src = '../images/Black_king.png';
+        blackKingImg.src = '/images/Black_king.png';
         blackKingCell.appendChild(blackKingImg);
     }
     //Rei Branco
     whiteKing(position){
         const whiteKingCell = document.querySelector(position);
         const whiteKingImg = new Image();
-        whiteKingImg.src = '../images/White_king.png';
+        whiteKingImg.src = '/images/White_king.png';
         whiteKingCell.appendChild(whiteKingImg);
     }
 
