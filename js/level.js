@@ -38,7 +38,7 @@ export default class Level {
                 else{
                     count += 1;
                 }
-                if(count >= 60000){
+                if(count >= 10){
                     count = Math.floor((count / 2)) + 1
                     const clear = document.querySelector('body')
                     clear.innerHTML = ''
