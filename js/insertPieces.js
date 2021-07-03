@@ -35,8 +35,8 @@ export default class InsertPieces {
     blackBishop(position){
         const blackBishopCell = document.querySelector(position);
         const blackBishopImg = new Image();
-        blackQueenImg.src = '../images/Black_bishop.png'
-        blackBishopCell.appendChild(blackQueenImg);
+        blackBishopImg.src = '../images/Black_bishop.png'
+        blackBishopCell.appendChild(blackBishopImg);
     }
 
     //Bispo Branco
@@ -45,6 +45,49 @@ export default class InsertPieces {
         const whiteBishopImg = new Image();
         whiteBishopImg.src = '../images/White_bishop.png'
         whiteBishopCell.appendChild(whiteBishopImg);
+    }
+
+    //Torre Negro
+    blackRook(position){
+        const blackRookCell = document.querySelector(position);
+        const blackRookImg = new Image();
+        blackRookImg.src = '../images/Black_rook.png'
+        blackRookCell.appendChild(blackRookImg);
+    }
+    //torre branca
+    whiteRook(position){
+        const whiteRookCell = document.querySelector(position);
+        const whiteRookImg = new Image();
+        whiteRookImg.src = '../images/White_rook.png'
+        whiteRookCell.appendChild(whiteRookImg);
+    }
+    //
+    whitePawn(position){
+        const whitePawnCell = document.querySelector(position);
+        const whitePawnImg = new Image();
+        whitePawnImg.src = '../images/White_pawn.png'
+        whitePawnCell.appendChild(whitePawnImg);
+    }
+    
+    blackPawn(position){
+        const blackPawnCell = document.querySelector(position);
+        const blackPawnmg = new Image();
+        blackPawnmg.src = '../images/Black_pawn.png'
+        blackPawnCell.appendChild(blackPawnmg);
+    }
+
+    whiteHorse(position){
+        const whiteHorseCell = document.querySelector(position);
+        const whiteHorseImg = new Image();
+        whiteHorseImg.src = '../images/White_horse.png'
+        whiteHorseCell.appendChild(whiteHorseImg);
+    }
+
+    blackHorse(position){
+        const blackHorseCell = document.querySelector(position);
+        const blackHorseImg = new Image();
+        blackHorseImg.src = '../images/Black_horse.png'
+        blackHorseCell.appendChild(blackHorseImg);
     }
 }
 

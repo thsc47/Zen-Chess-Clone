@@ -1,11 +1,10 @@
-import MovePieces from "./levelI.js";
+import Level from "./level.js";
 
 //Classe para iniciar o prímeiro nível
 class StartGame{
     constructor(){
-        const levelI = new MovePieces()
-        levelI.start()
-        levelI.move()
+        const level = new Level()
+        level.start()
 
     }
 }

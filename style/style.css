@@ -1,5 +1,5 @@
 body {
-    background-color: #fafafa;
+    background-image: linear-gradient(to bottom , #ebf9fa , #c6ffec);
 }
 
 #game {
@@ -7,15 +7,10 @@ body {
     padding: 100px;
 }
 
-#instruction {
-    flex-direction: column;
-    width: 150px;
-    background-image: url('../images/Placeholder.svg');
-}
-
 #board {
     flex-direction: column;
-    padding: 100px;
+    padding-top: 100px;
+    padding-left: 650px;
     
 }
 
@@ -36,18 +31,50 @@ body {
 }
 
 .chess-cell-black {
-    background-color: #9d5130;
+    background-color: #9cbab2
+    ;
 
 }
 
 .chess-cell-white {
-    background-color: #f1c0c0;
+    background-color: #d9eee7;
 }
 
 .chess-cell-black:active {
-    background-color: #693824;
+    background-color: #58595b;
 }
 
 .chess-cell-white:active {
-    background-color: #f5a6a6;
+    background-color: #aeb9b8;
+}
+
+/*teste*/
+#victory {
+    position:absolute;
+    left:43%; /*43*/
+    top:23%; /*23*/
+    margin-left:-110px;
+    margin-top:-40px;
+}
+
+h1{
+    font: 10em sans-serif;
+}
+
+p {
+    font: 3em sans-serif;
+}
+
+button{
+    position:absolute;
+    left:43%; /*43*/
+    top:30%; /*23*/
+    background-color: #cacfcf; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
