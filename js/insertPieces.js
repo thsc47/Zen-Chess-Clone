@@ -19,7 +19,7 @@ export default class InsertPieces {
     whiteQueen(position){
          const whiteQueenCell = document.querySelector(position);
          const whiteQueenImg = new Image();
-         whiteQueenImg.src = './images/White_queen.png'
+         whiteQueenImg.src = 'images/White_queen.png'
          whiteQueenCell.appendChild(whiteQueenImg);
      }
 
@@ -27,7 +27,7 @@ export default class InsertPieces {
     blackQueen(position){
         const blackQueenCell = document.querySelector(position);
         const blackQueenImg = new Image();
-        blackQueenImg.src = './images/Black_queen.png'
+        blackQueenImg.src = 'images/Black_queen.png'
         blackQueenCell.appendChild(blackQueenImg);
     }
 
@@ -35,7 +35,7 @@ export default class InsertPieces {
     blackBishop(position){
         const blackBishopCell = document.querySelector(position);
         const blackBishopImg = new Image();
-        blackBishopImg.src = '../images/Black_bishop.png'
+        blackBishopImg.src = 'images/Black_bishop.png'
         blackBishopCell.appendChild(blackBishopImg);
     }
 
@@ -43,7 +43,7 @@ export default class InsertPieces {
     whiteBishop(position){
         const whiteBishopCell = document.querySelector(position);
         const whiteBishopImg = new Image();
-        whiteBishopImg.src = '../images/White_bishop.png'
+        whiteBishopImg.src = 'images/White_bishop.png'
         whiteBishopCell.appendChild(whiteBishopImg);
     }
 
@@ -51,42 +51,42 @@ export default class InsertPieces {
     blackRook(position){
         const blackRookCell = document.querySelector(position);
         const blackRookImg = new Image();
-        blackRookImg.src = '../images/Black_rook.png'
+        blackRookImg.src = 'images/Black_rook.png'
         blackRookCell.appendChild(blackRookImg);
     }
     //torre branca
     whiteRook(position){
         const whiteRookCell = document.querySelector(position);
         const whiteRookImg = new Image();
-        whiteRookImg.src = '../images/White_rook.png'
+        whiteRookImg.src = 'images/White_rook.png'
         whiteRookCell.appendChild(whiteRookImg);
     }
     //
     whitePawn(position){
         const whitePawnCell = document.querySelector(position);
         const whitePawnImg = new Image();
-        whitePawnImg.src = '../images/White_pawn.png'
+        whitePawnImg.src = 'images/White_pawn.png'
         whitePawnCell.appendChild(whitePawnImg);
     }
     
     blackPawn(position){
         const blackPawnCell = document.querySelector(position);
         const blackPawnmg = new Image();
-        blackPawnmg.src = '../images/Black_pawn.png'
+        blackPawnmg.src = 'images/Black_pawn.png'
         blackPawnCell.appendChild(blackPawnmg);
     }
 
     whiteHorse(position){
         const whiteHorseCell = document.querySelector(position);
         const whiteHorseImg = new Image();
-        whiteHorseImg.src = '../images/White_horse.png'
+        whiteHorseImg.src = 'images/White_horse.png'
         whiteHorseCell.appendChild(whiteHorseImg);
     }
 
     blackHorse(position){
         const blackHorseCell = document.querySelector(position);
         const blackHorseImg = new Image();
-        blackHorseImg.src = '../images/Black_horse.png'
+        blackHorseImg.src = 'images/Black_horse.png'
         blackHorseCell.appendChild(blackHorseImg);
     }
 }
